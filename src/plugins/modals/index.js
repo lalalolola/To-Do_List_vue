@@ -30,7 +30,7 @@ const
         }
     },
     plugin = {
-        install (App, options) {
+        install(App, options) {
             App.component('Modal', Modal)
             App.provide('$modals', api)
         }

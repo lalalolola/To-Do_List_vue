@@ -14,7 +14,7 @@ const service = {
         ]
     },
     validateTodo(item) {
-        return item.text.length < 0;
+        return item.text.length > 0;
     },
     makeCopy(item) {
         return JSON.parse(JSON.stringify(item))

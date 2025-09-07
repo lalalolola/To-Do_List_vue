@@ -25,7 +25,7 @@ import {ref, inject, onMounted, onUpdated} from 'vue'
       } else {
         let index = getIndex(item);
         if (index >= 0) {
-          _item.value[index] = item.value
+          _items.value[index] = _item.value
         } else {
           alert('Error updating the item')
         }
