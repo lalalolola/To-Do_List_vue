@@ -3,7 +3,7 @@
 
   const
       $props = defineProps(['modelValue']),
-      $emit = defineEmits(['update: modelValue']),
+      $emit = defineEmits(['update:modelValue']),
       _value = ref('')
 
   onMounted(() => {
@@ -14,7 +14,7 @@
     publishValue();
   }
   function publishValue() {
-    $emit('update: modelValue', _value.value);
+    $emit('update:modelValue', _value.value);
   }
 </script>
 

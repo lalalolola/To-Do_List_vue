@@ -9,12 +9,12 @@
           default: () => { return {} }
         }
       }),
-      $emit = defineEmits(['update: modelValue']),
+      $emit = defineEmits(['update:modelValue']),
       _item = ref({})
 
   _item.value = { ...$props.modelValue }
   function emitUpdate() {
-    $emit('update: modelValue', _item.value)
+    $emit('update:modelValue', _item.value)
   }
 </script>
 
